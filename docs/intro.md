@@ -4,44 +4,24 @@ sidebar_position: 1
 
 # Introduction
 
-Let's discover **NoDB.ai in less than 5 minutes**.
+You can think of **[NoDB](https://nodb.ai)** as Google and ChatGPT combined, but only for your documents.
 
-## Getting Started
+## Overview
 
-Get started by **creating a new site**.
+NoDB is a SaaS platform that orchestrates the process of searching your own data and querying [LLMs](https://nodb.ai) (such as [Open AI models](https://platform.openai.com/docs/models)). Behind the scenes, NoDB generates your [vector embeddings](https://www.pinecone.io/learn/vector-embeddings-for-developers/) and calls the LLMs with your query.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+### Vector embeddings
 
-### What you'll need
+Every document you upload, NoDB processes it by generating [vector embeddings](https://www.pinecone.io/learn/vector-embeddings-for-developers/), a numerical represention that captures the semantic meaning and contextual information of your data. These computed embeddings are indexed in a [vector database](https://www.pinecone.io/learn/vector-database/) for fast and accurate seaches based on similarity or relevance.
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+When you submit a query, NoDB compares the vector representation of your query with the indexed embeddings in order to perform efficient search operations.
 
-## Generate a new site
+### LLM integration
 
-Generate a new Docusaurus site using the **classic template**.
+NoDB takes your query, builds the relevant context from the precomputed embeddings, and calls an LLM to obtain insightful responses. Within the console, regenerate responses, change the prompt, configure settings, and publish a Knowledge Agent.
 
-The classic template will automatically be added to your project after you run the command:
+A **Knowledge Agent** is a generated app that comes out-of-the-box with NoDB when you publish a data source. This way, you can query your documents from anywhere.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+## Get Started
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+[Get Started](/docs/guides/get-started) to publish a Knowledge Agent in minutes!
