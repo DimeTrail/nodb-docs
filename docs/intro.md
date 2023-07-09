@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Introduction
 
 You can think of **[NoDB](https://nodb.ai)** as Google and ChatGPT combined, but only for your documents.
@@ -24,4 +20,4 @@ A **Knowledge Agent** is a generated app that comes out-of-the-box with NoDB whe
 
 ## Get Started
 
-[Get Started](/docs/guides/get-started) to publish a Knowledge Agent in minutes!
+[Get Started](/docs/get-started) to publish a Knowledge Agent in minutes!
