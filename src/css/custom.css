@@ -5,7 +5,7 @@
  */
 
 /* You can override the default Infima variables here. */
-:root {
+/* :root {
   --ifm-color-primary: #004bcf;
   --ifm-color-primary-dark: #0044ba;
   --ifm-color-primary-darker: #0040b0;
@@ -15,16 +15,62 @@
   --ifm-color-primary-lightest: #0e65ff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-hr-margin-vertical: 0.7rem;
+} */
+
+:root {
+  --ifm-color-primary: #193b76;
+  --ifm-color-primary-dark: #193b76;
+  --ifm-color-primary-darker: #153264;
+  --ifm-color-primary-darkest: #112953;
+  --ifm-color-primary-light: #1b4182;
+  --ifm-color-primary-lighter: #1d4488;
+  --ifm-color-primary-lightest: #214d99;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-hr-margin-vertical: 0.7rem;
+  --ifm-navbar-height: 4rem;
+
+  --ifm-menu-color-background-active: #f1f6ff;
+  --ifm-menu-color-background-hover: none;
+  /* --ifm-toc-border-color: none; */
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #bedaff;
+  --ifm-color-primary-dark: #92c1ff;
+  --ifm-color-primary-darker: #7bb4ff;
+  --ifm-color-primary-darkest: #398eff;
+  --ifm-color-primary-light: #eaf3ff;
+  --ifm-color-primary-lighter: #ffffff;
+  --ifm-color-primary-lightest: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ifm-menu-color-background-active: var(--ifm-hover-overlay);
+  --ifm-menu-color-background-hover: var(--ifm-hover-overlay);
+}
+
+.menu__link {
+  line-height: 1rem;
+  font-size: 0.85rem;
+  margin-left: 20px;
+}
+
+.menu__link--sublist-caret:after {
+  margin-inline-start: -70px;
+  background: var(--ifm-menu-link-sublist-icon) 50% / 4.5rem 1.25rem;
+}
+
+.menu__link--sublist:hover {
+  background: red;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.navbar__title {
+  font-family: Geneva;
+  font-weight: 100;
 }

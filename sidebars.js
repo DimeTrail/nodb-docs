@@ -20,6 +20,11 @@ const sidebars = {
 
   docsSidebar: [
     {
+      type: "html",
+      value: "<div style='padding-top:5px'></div>", // The HTML to be rendered
+      defaultStyle: true, // Use the default menu item styling
+    },
+    {
       type: "doc",
       id: "intro", // document ID
       label: "Introduction", // sidebar label
@@ -43,7 +48,7 @@ const sidebars = {
     },
     {
       type: "html",
-      value: "<hr>", // The HTML to be rendered
+      value: "<div style='padding-top:20px'></div>", // The HTML to be rendered
       defaultStyle: true, // Use the default menu item styling
     },
     {
